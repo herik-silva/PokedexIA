@@ -1,5 +1,7 @@
 services:
   api:
-    build .
+    build: .
     ports:
       - "8000:5000"
+    volumes:
+      - .:/code
