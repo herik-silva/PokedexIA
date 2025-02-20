@@ -3,7 +3,6 @@ import os
 
 from core.utils.downloader import downloadModelFile
 
-dir = os.listdir("./core/cnn/pokemon")
 downloadModelFile()
 
 if __name__ == '__main__':
