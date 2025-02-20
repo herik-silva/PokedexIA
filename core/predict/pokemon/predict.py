@@ -36,7 +36,7 @@ def run_predict(image_path):
 
     print(os.path.abspath("./core/cnn/pokemon/pokemon_modelv2.pth"))
     absolute_path = os.path.abspath("./core/cnn/pokemon/pokemon_model.pth")
-    model.load_state_dict(torch.load("pokemon_model.pth", map_location="cpu"))
+    model.load_state_dict(torch.load(absolute_path, map_location="cpu"))
 
     predicted_class, _ = predict(image_path, model, class_names, "cpu")
 
