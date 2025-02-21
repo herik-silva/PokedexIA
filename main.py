@@ -8,4 +8,4 @@ downloadModelFile()
 port = int(os.environ.get("PORT", 5000))
 
 if __name__ == '__main__':
-    app.run(debug=True, host=ServerConfig.HOST.value, port=port)
+    app.run(debug=False, host=ServerConfig.HOST.value, port=port)
